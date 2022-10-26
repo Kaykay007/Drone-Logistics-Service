@@ -2,11 +2,8 @@ package com.korede.dronefordeliveryservice.service;
 
 import com.korede.dronefordeliveryservice.model.Drone;
 import com.korede.dronefordeliveryservice.responses.*;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 public interface DroneService {
     Drone findDroneById(String serialNumber);
@@ -18,7 +15,4 @@ public interface DroneService {
     LoadedFoodPackResponse loadedFoodPackForADrone(String serialNumber);
     void periodCheckForBatteryHealth(List<Drone> drones);
 }
-
-
-//}
 
